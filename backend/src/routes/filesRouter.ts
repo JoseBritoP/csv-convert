@@ -1,8 +1,10 @@
 import { Router } from "express";
-import { POSTFiles } from "../handlers/files";
+import { GETProducts, POSTFiles } from "../handlers/files";
+import upload from "../middlewares/multer";
 
 const filesRouter = Router();
 
-filesRouter.post('/',POSTFiles)
+filesRouter.post("/files/", upload.single("file"), POSTFiles);
+filesRouter.get("/products/", GETProducts);
 
-export default filesRouter
+export default filesRouter;

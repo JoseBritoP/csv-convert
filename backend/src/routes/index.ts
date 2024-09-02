@@ -7,7 +7,7 @@ mainRouter.get('/',(req,res)=>{
   return res.send('hello')
 })
 
-mainRouter.use('/api/files',filesRouter)
+mainRouter.use('/api/',filesRouter)
 
 // ---
 mainRouter.use((req:Request, res:Response, next:NextFunction) => {
