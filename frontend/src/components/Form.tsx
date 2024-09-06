@@ -7,7 +7,7 @@ export default function Form() {
   };
   return (
     <form className="border-gray-100 p-4 flex flex-col">
-      <fieldset className="border-2 p-6 border-gray-500 rounded-lg">
+      <fieldset className="border-2 p-6 border-gray-100 rounded-lg">
         <div className="flex items-center gap-6 border-2 p-4 rounded-lg">
           <label
             htmlFor="file"
